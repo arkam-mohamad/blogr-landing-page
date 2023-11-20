@@ -1,1 +1,135 @@
+*{
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+header{
+  background-image: url('./images/bg-pattern-intro-desktop.svg'), linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 50px 100px;
+  border-radius: 0 0 0 50px;
+  color: white;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+}
+.links{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.links > div{
+  display: flex;
+  gap: 30px;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.sign{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+button{
+  background-color: white;
+  color: hsl(356, 100%, 66%);
+  border: 0;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+.header{
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  padding: 50px;
+}
+.buttons{
+  display: flex;
+  gap: 10px;
+}
+.learn{
+  border: 1px solid white;
+  background-color: hsl(356, 100%, 66%);
+  color: white;
+}
 
+main{
+  display: flex;
+  flex-direction: column;
+}
+.top{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+}
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.container > div:not(.image){
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.image img{
+  max-width: 100%;
+}
+.middle{
+  margin-bottom: 150px;
+  color: white;
+}
+.middle .container{
+  background-image: url('./images/bg-pattern-circles.svg'), linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 0 100px;
+  position: relative;
+}
+.middle img{
+  position: absolute;
+  top: -75px;
+}
+.bottom .container > div:not(.image){
+  padding-top: 50px;
+}
+h2, h3{
+  color: hsl(208, 49%, 24%);
+}
+.top p, .bottom p{
+  color: hsl(207, 13%, 34%);
+}
+
+footer{
+  background-color: hsl(240, 10%, 16%);
+  border-radius: 0 100px 0 0;
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  padding: 50px;
+  color: hsl(240, 2%, 79%);
+}
+.footer-links{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer-links div{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
